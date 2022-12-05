@@ -1,11 +1,12 @@
 {
   "name": "@seancollings/pl_sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist-sdk/index.js",
   "scripts": {
     "prebuild": "rimraf ../dist-sdk",
-    "build": "tsc -p tsconfig.build.json && tsc-alias",
+    "build:2": "tsc -p tsconfig.build.json && tsc-alias",
+    "build": "webpack",
     "postbuild": "tsc-alias",
     "test": "exit 0"
   },
@@ -25,5 +26,14 @@
   "homepage": "https://github.com/SeanCollings/pl_sdk#readme",
   "publishConfig": {
     "@seancollings:registry": "https://npm.pkg.github.com"
+  },
+  "files": [
+    "dist-sdk/**/*"
+  ],
+  "devDependencies": {
+    "ts-loader": "^9.4.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0",
+    "webpack-node-externals": "^3.0.0"
   }
 }
