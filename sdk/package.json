@@ -6,7 +6,8 @@
   "scripts": {
     "prebuild": "rimraf ../dist-sdk",
     "build": "tsc -p tsconfig.build.json && tsc-alias",
-    "postbuild": "tsc-alias"
+    "postbuild": "tsc-alias",
+    "test": "exit 0"
   },
   "keywords": [],
   "author": "",
