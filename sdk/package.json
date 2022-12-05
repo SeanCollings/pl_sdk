@@ -1,0 +1,17 @@
+{
+  "name": "sdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rimraf ../dist-sdk",
+    "build": "tsc -p tsconfig.build.json && tsc-alias",
+    "postbuild": "tsc-alias"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "graphql-request": "^5.0.0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": ["node_modules", "dist", "test", "**/*spec.ts"],
+  "compilerOptions": {
+    // "paths": {
+    //   "@/*": ["src/*", "dist-sdk/*"]
+    // }
+  }
+  // "include": ["src/sdk/*"]
+}
